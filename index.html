@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Modak&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <section class="home flex">
+    <div class="home-container">
+      <h2>THIS IS MY SECOND PORTFOLIO</h2>
+    </div>
+  </section>
+  <header>
+    <div class="main-header flex">
+      <div class="logo"><h1>HIROTO</h1></div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="pc-size-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#article">Article</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="side-bar">
+      <aside>
+        <ul>
+          <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+        </ul>
+        <button><i class="far fa-check-circle"></i><span>OPEN</span></button>
+      </aside>
+    </div>
+  </header>
+  <div class="nav-wrapper">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#article">Article</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <section class="about" id="about">
+    <div class="section-title">
+      <h2>About</h2>
+    </div>
+    <div class="about-container flex">
+      <div class="image-wrapper">
+        <img src="./image/IMG_4629.JPG">
+      </div>
+      <div class="about-text-container">
+        <div class="my-name">
+          <h3>小林大斗</h3>
+          <p>kobayashi hiroto</p>
+        </div>
+        <div class="about-text">
+          <p>これは小林大斗の第二ポートフォリオサイトです。</p>
+          <p>codeshipのWEBフロント開発コースで学んだことをもとに、スティッキーヘッダー、サイドバー、ハンバーガーメニュー、モーダルウィンドウをjQueryを使って導入しています。</p>
+          <p>第一ポートフォリオは<a href="https://kdaito.github.io/first_portfolio/">こちら</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="article" id="article">
+    <div class="section-title">
+      <h2>Article</h2>
+    </div>
+    <article class="flex">
+      <div class="article-image">
+        <img src="./image/cycling.jpg" alt="article image 1">
+      </div>
+      <div class="article-container">
+        <h2 class="article-title">Article1 Title</h2>
+        <div class="article-content">
+          article1 content article1 content article1 content article1 content article1 content article1 content article1 content article1 content article1 content article1 content article1 content article1 content 
+        </div>
+      </div>
+    </article>
+    <article class="flex">
+      <div class="article-image">
+        <img src="./image/programming.jpg" alt="article image 2">
+      </div>
+      <div class="article-container">
+        <h2 class="article-title">Article2 Title</h2>
+        <div class="article-content">
+          article2 content article2 content article2 content article2 content article2 content article2 content article2 content article2 content article2 content article2 content article2 content article2 content 
+        </div>
+      </div>
+    </article>
+    <article class="flex">
+      <div class="article-image">
+        <img src="./image/study.jpg" alt="article image 1">
+      </div>
+      <div class="article-container">
+        <h2 class="article-title">Article3 Title</h2>
+        <div class="article-content">
+          article3 content article3 content article3 content article3 content article3 content article3 content article3 content article3 content article3 content article3 content article3 content article3 content 
+        </div>
+      </div>
+    </article>
+  </section>
+  <div class="modal open">
+    <div class="modal-bg"></div>
+    <div class="modal-window">
+      <div class="modal-article">
+        <div class="modal-image">
+          <img class="modal-img" src="./image/study.jpg">
+        </div>
+        <div class="modal-container">
+          <h2 class="modal-title">Article3 Title</h2>
+          <div class="modal-content">article3 content article3 content article3 content article3 content article3 content article3 content article3 content article3 content article3 content article3 content article3 content article3 content</div>
+        </div>
+      </div>
+      <div class="modal-close-btn">CLOSE</div>
+    </div>
+  </div>
+
+  <section class="contact" id="contact">
+    <div class="section-title">
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-container">
+      <div class="contact-row">
+        <div class="input-wrapper">
+          <div class="input-data">
+            <input type="text" required>
+            <label>お名前(漢字)</label>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <div class="input-data">
+            <input type="text" required>
+            <label>おなまえ(ふりがな)</label>
+          </div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="input-wrapper">
+          <div class="input-data">
+            <input type="text" required>
+            <label>メールアドレス</label>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <div class="input-data">
+            <input type="text" required>
+            <label>電話番号</label>
+          </div>
+        </div>
+      </div>
+      <div class="textarea">
+        <label>メッセージ</label>
+        <textarea required></textarea>
+      </div>
+      <div class="btn-wrapper">
+        <div class="btn-inner"></div>
+        <a href="#">送信</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="flex">
+    <p>kobayashi hiroto</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
