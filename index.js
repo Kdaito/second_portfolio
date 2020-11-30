@@ -88,4 +88,19 @@ $(function () {
   $modalBtn.click(function() {
     $modal.removeClass("open");
   });
+
+  $(window).on("load scroll", function() {
+    let box = $(".fadeIn");
+    let animated = "animated";
+
+    box.each(function() {
+      let boxOffset = $(this).offset().top;
+      let scrollPos = $(window).scrollTop();
+      let wh = $(window).height();
+
+      if(scrollPos > boxOffset - wh + 100) {
+        $(this).addClass(animated);
+      }
+    });
+  });
 });

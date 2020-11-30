@@ -45,6 +45,15 @@ a {
     }
   }
 }
+.fadeIn {
+  transition: 1s;
+  transform: translateY(30px);
+  opacity: 0;
+  &.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .home {
   height: calc(100vh - 6rem);
   width: 100%;
@@ -58,6 +67,18 @@ a {
   h2 {
     color: white;
     font-size: 4.5rem;line-height: 6rem;
+    animation: transformTitle 4s;
+  }
+  @keyframes transformTitle{
+    0% {
+      opacity: 0;
+      transform: rotateX(90deg);
+      transform-origin: 50% 50% -30px;
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
   }
 }
 header {
