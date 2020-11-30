@@ -357,7 +357,7 @@ header.active {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 9rem auto 0;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 .modal .modal-window .modal-article .modal-image {
@@ -816,6 +816,9 @@ footer p {
   }
   .contact .contact-container {
     width: 70%;
+  }
+  .contact .contact-container .contact-row .input-wrapper .input-data label {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

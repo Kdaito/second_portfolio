@@ -271,7 +271,7 @@ header {
       align-items: center;
       flex-direction: column;
       margin: 9rem auto 0;
-      padding-bottom: 2rem;
+      padding-bottom: 5rem;
       .modal-image {
         width: 100%;
         img {
@@ -686,6 +686,15 @@ footer {
     padding-bottom: 10rem;
     .contact-container {
       width: 70%;
+      .contact-row {
+        .input-wrapper {
+          .input-data {
+            label {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
     }
   }
 }
